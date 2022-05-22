@@ -14,7 +14,7 @@ window.addEventListener('scroll', () => {
     var opacity = 1;
 
     if (scrollTop > distanceToTop) {
-        opacity = 1 - (scrollTop - distanceToTop) / elementHeight / 2;
+        opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
     }
 
     if (opacity >= 0) {
