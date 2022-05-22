@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#headblock {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#headblock img {
+    width: 100%;
+    filter: blur(5px);
+    animation: zoomin 1.3s;
+}
+
+#headblock h1 {
+    font-size: 6rem;
+    transform: translateY(-400%);
+    animation: fadedown 1.3s;
+}
+
+#headblock span#line {
+    background-color: #fbb040;
+    width: 400px;
+    height: 12px;
+    transform: translateY(-4500%);
+    animation: fadeinright 1s;
+}
+
+#threepoints {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0px 30px;
+    margin-bottom: 150px;
+}
+
+#point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 70px;
+    scale: 100%;
+}
+
+#point img.pointimg {
+    width: 175px;
+    height: 175px;
+}
+
+#point p.pointheading {
+    font-size: 36pt;
+}
+
+#point p.pointbody {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#company {
+    display: flex;
+    background-color: #fbb040;
+    padding: 50px;
+}
+
+#company div#text {
+    padding: 30px 50px;
+    margin-left: 30px;
+}
+
+#company div#text h1 {
+    font-size: 48pt;
+}
+
+#company div#text p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 18pt;
+}
+
+@keyframes fadedown {
+    0% {transform: translateY(-500%);
+        opacity: 25%;}
+    100% {transform: translateY(-400%);
+          opacity: 100%;}
+}
+
+@keyframes zoomin {
+    0% {transform: scale(150%);}
+    100% {transform: scale(100%);
+          filter: blur(5px);}
+}
+
+@keyframes fadeinright {
+    0% {transform: translateX(-100%) translateY(-4500%);
+        opacity: 0%;}
+    100% {transform: translateX(0) translateY(-4500%);
+          opacity: 100%;}
+}
