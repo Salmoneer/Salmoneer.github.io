@@ -93,6 +93,77 @@ html {
     font-size: 18pt;
 }
 
+#ingredients {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#ingredients h1 {
+    font-size: 36pt;
+    margin-bottom: 10px;
+}
+
+#ingredients ul {
+    list-style-type: none;
+}
+
+#ingredients ul li {
+    font-size: 24pt;
+    margin: 10px 0px;
+}
+
+#ingredients ul span {
+    display: block;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #fbb040;
+}
+
+#ingredients ul span.ingprev-first {
+    transform: translateX(-260px) translateY(28px);
+}
+
+#ingredients ul span.ingprev-second {
+    transform: translateX(140px) translateY(-295px);
+}
+
+#ingredients ul li.first {
+    transform: translateX(-200px) translateY(-25px);
+}
+
+#ingredients ul li.second {
+    transform: translateX(200px) translateY(-350px);
+}
+
+#promo {
+    display: flex;
+    transform: translateY(-80%);
+    background-color: #fbb040;
+    height: 300px;
+    padding: 50px;
+    align-items: center;
+}
+
+#promo h1#promoheading {
+    width: 600px;
+    margin-right: 30px;
+}
+
+#promo div#bar {
+    width: 35px;
+    height: 100px;
+    background-color: white;
+}
+
+#promo p#promobody {
+    margin-left: 50px;
+}
+
 @keyframes fadedown {
     0% {transform: translateY(-500%);
         opacity: 25%;}
