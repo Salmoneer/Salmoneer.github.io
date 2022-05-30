@@ -162,6 +162,49 @@ html {
 
 #promo p#promobody {
     margin-left: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#robots {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 50px;
+    transform: translateY(-70px);
+}
+
+#robots h1#robotstitle {
+    margin: 5px 20px;
+}
+
+#robots div#bar {
+    width: 24px;
+    height: 100px;
+    background-color: #fbb040;
+    transform: translateY(-20px);
+}
+
+#robots p#robotsbody {
+    margin: 0px 50px;
+    font-size: 14pt;
+    transform: translateY(-25px);
+}
+
+#footer {
+    background-color: #fbb040;
+    padding: 30px 15px;
+}
+
+#deal {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fbb040;
+}
+
+#deal #dismissbutton {
+    cursor: pointer;
 }
 
 @keyframes fadedown {
