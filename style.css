@@ -22,17 +22,44 @@ html {
     width: 100%;
 }
 
-#headblock picture {
+#headblock img {
     justify-content: center;
+    width: 100%;
     margin: auto;
     filter: blur(5px);
     animation: zoomin 1.3s;
+}
+
+@media screen and (min-width: 600px) {
+    #headblock img#bigpic {
+        display: block;
+    }
+
+    #headblock img#littlepic {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #headblock img#bigpic {
+        display: none;
+    }
+
+    #headblock img#littlepic {
+        display: block;
+    }
 }
 
 #headblock h1 {
     font-size: 6rem;
     animation: fadedown 1.3s;
     transform: translateY(-400%);
+}
+
+@media screen and (max-width: 500px) {
+    #headblock h1 {
+        font-size: 20vw;
+    }
 }
 
 #headblock span#line {
@@ -44,11 +71,11 @@ html {
 
 @media screen and (max-width: 775px) {
     #headblock span#line {
-        transform: translateY(-540px);
+        transform: translateY(-2300%);
     }
 
     #headblock h1 {
-        transform: translateY(-200%);
+        transform: translateY(-100%);
         text-align: center;
     }
 }
@@ -300,9 +327,9 @@ html {
 
 @media screen and (max-width: 775px) {
     @keyframes fadedown {
-        0% {transform: translateY(-400%);
+        0% {transform: translateY(-200%);
             opacity: 25%;}
-        100% {transform: translateY(-200%);
+        100% {transform: translateY(-100%);
             opacity: 100%;}
     }
 }
@@ -314,8 +341,8 @@ html {
 }
 
 @keyframes fadeinright {
-    0% {transform: translateX(-100%) translateY(-4500%);
+    0% {transform: translateX(-100%) translateY(-2300%);
         opacity: 0%;}
-    100% {transform: translateX(0) translateY(-4500%);
+    100% {transform: translateX(0) translateY(-2300%);
           opacity: 100%;}
 }
