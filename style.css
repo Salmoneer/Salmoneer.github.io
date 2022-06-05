@@ -48,6 +48,15 @@ html {
     #headblock img#littlepic {
         display: block;
     }
+
+    #headblock span#line {
+        transform: translateY(-2200%);
+    }
+
+    #headblock h1 {
+        transform: translateY(-100%);
+        text-align: center;
+    }
 }
 
 #headblock h1 {
