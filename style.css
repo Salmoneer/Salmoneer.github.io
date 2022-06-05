@@ -80,6 +80,7 @@ html {
     }
     #point {
         width: 100%;
+        padding-bottom: 50px;
     }
 }
 
@@ -113,6 +114,7 @@ html {
 @media screen and (max-width: 600px) {
     #company {
         padding: 0;
+        padding-top: 15px;
     }
 }
 
@@ -172,9 +174,9 @@ html {
 #promo {
     display: flex;
     background-color: #fbb040;
-    height: 300px;
     padding: 50px;
     align-items: center;
+    justify-content: center;
 }
 
 #promo h1#promoheading {
@@ -212,6 +214,8 @@ html {
 
     #promo h1#promoheading {
         width: auto;
+        text-align: center;
+        margin-left: 70px;
     }
 }
 
