@@ -1,4 +1,8 @@
-window.addEventListener('ready', () => {
+const barupdatedelay = 25;
+let barupdate = 0;
+let started = false;
+
+document.addEventListener("load", function() {
     let headblock = document.getElementById("headblock");
 });
 
@@ -7,11 +11,11 @@ window.addEventListener('scroll', () => {
         return;
     }
 
-    var distanceToTop = window.pageYOffset + headblock.getBoundingClientRect().top;
-    var elementHeight = headblock.offsetHeight;
-    var scrollTop = document.documentElement.scrollTop;
+    let distanceToTop = window.pageYOffset + headblock.getBoundingClientRect().top;
+    let elementHeight = headblock.offsetHeight;
+    let scrollTop = document.documentElement.scrollTop;
 
-    var opacity = 1;
+    let opacity = 1;
 
     if (scrollTop > distanceToTop) {
         opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
@@ -21,3 +25,9 @@ window.addEventListener('scroll', () => {
         headblock.style.opacity = opacity;
     }
 });
+
+function barclick() {
+    let line = document.getElementById("line");
+    line.classList.remove("noclick");
+    line.classList.add("barclicked");
+}
